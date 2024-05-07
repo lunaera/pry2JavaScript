@@ -112,3 +112,5 @@ const resoult = arrayNumber.map(function (values) {
 })
 
 console.log(resoult);
+
+//solo para ver
