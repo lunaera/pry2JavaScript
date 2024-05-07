@@ -1,0 +1,5 @@
+# archivos para ignorar
+package.json
+
+# para ignorar carpetas
+/pages

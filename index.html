@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- vista para el navegador y dispositivos móviles-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--color para dispositivos móviles-->
+        <meta name="theme-color" content="#3456FF">
+
+        <title>HTML5 y JS</title>
+
+        <link rel="icon" sizes="64x64" href="src/assets/iconoHTML.png">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+
+        <link rel="stylesheet" href="src/css/estilos.css">
+
+    </head>
+    <body>
+        <section>
+            <!--getElementByID-->
+            <div>
+                <label for="nombreUser" id="lab">Nombre de usuario:</label>
+                <input type="text" id="nombreUser" name="nombreUser">
+
+                <!-- primera forma-->
+                <div id="respuestaTextContent" class="divTextContend"></div>
+
+                <!--segunda forma-->
+                <div id="respuestaInnerHTML" class="divInnerHTML"></div>
+                <!--tercera forma-->
+                <div id="respuestaDivInnerHTML" class="divInnerHTML">aqui se
+                    debe cargar el nuevo elemento</div>
+
+                <div>
+                    <button type="button" onclick="forID()"
+                        class="btn btn-dark">byID</button>
+                </div>
+
+            </div>
+
+            <hr>
+            <!--getElementByClassName-->
+            <div>
+                <table>
+                    <thead>
+                        <tr class="t1">
+                            <th>Nombre</th>
+                            <th>edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="t1">
+                            <td>Katia</td>
+                            <td>22</td>
+                        </tr>
+                        <tr class="t1">
+                            <td>Juan</td>
+                            <td>22</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--getElementByClassName-->
+
+                <input type="text" class="campoTexto" value="Dato 1">
+                <input type="text" class="campoTexto" value="Dato 2">
+                <input type="text" class="campoTexto" value="Dato 3">
+
+                <div>
+                    <button type="button" onclick="forClass()"
+                        class="btn btn-danger">forClass</button>
+                </div>
+            </div>
+
+            <!--getElementByName y getElementByTagName-->
+
+            <div>
+                <input type="text" name="campoTexto" value="Dato 1">
+                <input type="text" name="campoTexto" value="Dato 2">
+                <input type="text" name="campoTexto" value="Dato 3">
+
+                <div>
+                    <button type="button" onclick="forName()"
+                        class="btn btn-primary">forName</button>
+                </div>
+                <div>
+                    <button type="button" onclick="forTagName()"
+                        class="btn btn-primary">forTagName</button>
+                </div>
+            </div>
+            <!--for querySelector y forQuerySelectorALL-->
+
+            <div>
+                <input id="uno" type="text" class="campo1" value="Dato 1">
+                <input id="dos" type="text" class="campo1" value="Dato 2">
+                <input id="tres" type="text" class="campo1" value="Dato 3">
+
+                <div>
+                    <button type="button" onclick="forQuerySelector()"
+                        class="btn btn-secondary">forQuerySelector</button>
+                </div>
+                <div>
+                    <button type="button"
+                        onclick="forQuerySelectorALL()"
+                        class="btn btn-secondary">forQuerySelectorALL</button>
+                </div>
+            </div>
+
+            <!--appndChil, removeChiled se insertará el nuevo elemento después de label 2-->
+            <!--Pero el contenedor ya debe tener algunos elementos-->
+            <div id="container2">
+                <label class="item">Elemento 1</label>
+                <label class="item">Elemento 2</label>
+                <label class="item">Elemento 3</label>
+                <label class="item">Elemento 4</label>
+            </div>
+            <button type="submit" id="btnBotonX">Probar</button>
+
+        </section>
+
+        <flooter>
+            <!--propiedad a href
+            <p>Enlace a google <strong><a
+                        href="https://www.google.com">
+                        clic
+                        aqui!</a></strong></p>-->
+        </flooter>
+        <script src="src/js/accederDoom.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
